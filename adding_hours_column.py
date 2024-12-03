@@ -33,7 +33,7 @@ def add_hours_column(doc_path, output_path):
     doc.save(output_path)
 
 # Basisverzeichnis
-base_dir = "D:/Majd/IBB/Berichtsheft/Christoph Backhaus IT"
+base_dir = "D:/Majd/IBB/Berichtsheft/Christoph_Backhaus_IT"
 output_dir = os.path.join(base_dir, "bearbeitet")
 
 # Erstelle Output-Verzeichnis falls nicht vorhanden
