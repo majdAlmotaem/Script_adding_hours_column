@@ -61,3 +61,15 @@ python adding_hours_column.py "C:/Users/IhrName/Dokumente/Berichte" --output-dir
 Um alle verfügbaren Optionen anzuzeigen:
 ```bash
 python adding_hours_column.py --help
+```
+
+## 📜 Lizenz
+
+Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
+
+Die MIT-Lizenz ist eine permissive Lizenz, die:
+- ✅ Kommerzielle Nutzung erlaubt
+- ✅ Modifikation erlaubt
+- ✅ Private Nutzung erlaubt
+- ✅ Verteilung erlaubt
+- ℹ️ Nur einen Copyright-Hinweis erfordert
