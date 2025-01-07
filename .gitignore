@@ -17,3 +17,6 @@
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Archive files
+*.zip
