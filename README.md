@@ -1,75 +1,45 @@
-# 📊 Stunden-Spalten-Generator für Word-Dokumente
+# 📊 Hours Column Manager
 
-Dieses Python-Skript automatisiert das Hinzufügen einer Stundenspalte zu Word-Dokumenten mit Tätigkeitstabellen. Es ist besonders nützlich für Berichtshefte oder ähnliche Dokumente, die eine Zeiterfassung benötigen.
+A modern GUI application that automatically adds hours columns to Word documents with activity tables. Perfect for report books and time tracking documents.
 
-## ✨ Funktionen
+## ✨ Key Features
 
-- ➕ Fügt automatisch eine "Std" (Stunden) Spalte zu Word-Dokumenten hinzu
-- ⏰ Trägt 8 Stunden für normale Arbeitstage ein
-- 🏖️ Lässt die Stunden für Urlaub und Feiertage leer
-- 📑 Verarbeitet mehrere Dokumente auf einmal
-- 💾 Erstellt automatisch Sicherungskopien mit "_Bearbeitet" Suffix
+- 🖥️ User-friendly graphical interface with dark mode
+- ➕ Automatically adds "Hours" column to Word documents
+- ⏰ Sets 8 hours for regular workdays
+- 🏖️ Leaves hours empty for vacation and holidays
+- 📑 Batch processing of multiple documents
+- 💾 Creates processed files with "\_Processed" suffix
+- 🔄 Smart file handling - skips already processed documents
 
 ## 🚀 Installation
 
-1. 🐍 Stellen Sie sicher, dass Python auf Ihrem System installiert ist
-2. 📦 Installieren Sie die benötigten Abhängigkeiten:
-   ```bash
-   pip install -r requirements.txt
-   ```
+1. Download the latest release
+2. Extract the ZIP file
+3. Run `adding_hours_column.exe`
 
-## 🎯 Verwendung
+## 🎯 How to Use
 
-### 🔍 Wichtig - So geben Sie die Pfade ein:
+1. Start the application
+2. Select input folder containing your Word documents
+3. (Optional) Choose output folder for processed files
+4. Click "Add Hours Column" to start processing
+5. Check status bar for progress updates
 
-1. 💻 Öffnen Sie die Eingabeaufforderung (CMD)
-2. 📂 Navigieren Sie zum Verzeichnis mit diesem Skript
-3. ⌨️ Führen Sie einen der folgenden Befehle aus:
+## 💡 Tips
 
-#### 🔄 Option 1: Nur Eingabepfad
-Das Skript erstellt automatisch einen 'bearbeitet' Unterordner für die Ausgabe:
+- Access the User Guide through Help menu
+- Output folder is created automatically if not specified
+- Original files remain unchanged
+- Processed files are saved with "\_Processed" suffix
+
+## 🛠️ For Developers
+
+### Requirements
+
+- Python 3.x
+- Required packages:
+
 ```bash
-python adding_hours_column.py "HIER_IHR_EINGABEPFAD"
+pip install python-docx
 ```
-
-📝 Beispiel:
-```bash
-python adding_hours_column.py "C:/Users/IhrName/Dokumente/Berichte"
-```
-
-#### 🔄 Option 2: Eingabe- UND Ausgabepfad
-Wenn Sie den Ausgabeordner selbst bestimmen möchten:
-```bash
-python adding_hours_column.py "HIER_IHR_EINGABEPFAD" --output-dir "HIER_IHR_AUSGABEPFAD"
-```
-
-📝 Beispiel:
-```bash
-python adding_hours_column.py "C:/Users/IhrName/Dokumente/Berichte" --output-dir "C:/Users/IhrName/Dokumente/Berichte/Bearbeitet"
-```
-
-### ⚠️ Wichtige Hinweise:
-
-- 🔤 Pfade müssen in Anführungszeichen stehen
-- 🔍 Verwenden Sie Schrägstriche (/) oder doppelte Backslashes (\\\\) in Pfaden
-- 📁 Der Eingabepfad muss auf einen existierenden Ordner zeigen
-- 📁 Der Ausgabeordner wird automatisch erstellt, falls er nicht existiert
-- 🔒 Originaldokumente bleiben unverändert
-
-## ❓ Hilfe anzeigen
-
-Um alle verfügbaren Optionen anzuzeigen:
-```bash
-python adding_hours_column.py --help
-```
-
-## 📜 Lizenz
-
-Dieses Projekt ist unter der MIT-Lizenz lizenziert - siehe die [LICENSE](LICENSE) Datei für Details.
-
-Die MIT-Lizenz ist eine permissive Lizenz, die:
-- ✅ Kommerzielle Nutzung erlaubt
-- ✅ Modifikation erlaubt
-- ✅ Private Nutzung erlaubt
-- ✅ Verteilung erlaubt
-- ℹ️ Nur einen Copyright-Hinweis erfordert
