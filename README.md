@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6a9224f4-bef0-4ca4-b919-1f38591795e2" alt="Hours Column Manager Logo"/>
+</p>
+
+
 # 📊 Hours Column Manager
 
 A modern GUI application that automatically adds hours columns to Word documents with activity tables. Perfect for report books and time tracking documents.
@@ -25,6 +30,11 @@ A modern GUI application that automatically adds hours columns to Word documents
 3. (Optional) Choose output folder for processed files
 4. Click "Add Hours Column" to start processing
 5. Check status bar for progress updates
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/16c6d298-0f2a-489b-b064-bf46bba86b97" alt="Hours Column Manager"/>
+</p>
+
 
 ## 💡 Tips
 
