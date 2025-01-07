@@ -9,6 +9,15 @@ from docx.shared import Inches
 import glob
 import argparse
 
+def get_unprocessed_files(input_files, output_dir):
+    unprocessed = []
+    for input_file in input_files:
+        file_name = os.path.basename(input_file)
+        output_file = os.path.join(output_dir, f"{os.path.splitext(file_name)[0]}_Bearbeitet.docx")
+        if not os.path.exists(output_file):
+            unprocessed.append(input_file)
+    return unprocessed
+
 def add_hours_column(doc_path, output_path):
     # Dokument öffnen
     doc = Document(doc_path)
@@ -55,9 +64,16 @@ def main():
         print(f"Keine .docx Dateien in '{base_dir}' gefunden")
         return
 
-    print(f"{len(docx_files)} Word-Dokumente gefunden...")
+    # Nur unbearbeitete Dateien auswählen
+    unprocessed_files = get_unprocessed_files(docx_files, output_dir)
     
-    for old_name in docx_files:
+    if not unprocessed_files:
+        print("Keine neuen Dateien zum Bearbeiten gefunden.")
+        return
+
+    print(f"{len(unprocessed_files)} neue Word-Dokumente gefunden...")
+    
+    for old_name in unprocessed_files:
         file_name = os.path.basename(old_name)
         new_name = os.path.join(output_dir, f"{os.path.splitext(file_name)[0]}_Bearbeitet.docx")
         
@@ -65,7 +81,7 @@ def main():
         add_hours_column(old_name, new_name)
         print(f"Gespeichert als: {os.path.basename(new_name)}")
 
-    print(f"\nAlle Dateien wurden erfolgreich in '{output_dir}' gespeichert.")
+    print(f"\nAlle neuen Dateien wurden erfolgreich in '{output_dir}' gespeichert.")
 
 if __name__ == "__main__":
     main()
