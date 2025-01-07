@@ -36,11 +36,7 @@ class HoursColumnManagerGUI:
         self.root = tk.Tk()
         self.root.title("Hours Column Manager")
         self.root.geometry("600x400")
-        
-        # Add icon using absolute path
-        icon = tk.PhotoImage(file='hours column.png')
-        self.root.iconphoto(True, icon)
-        
+
         # Create Menu Bar
         menubar = tk.Menu(self.root)
         self.root.config(menu=menubar)
